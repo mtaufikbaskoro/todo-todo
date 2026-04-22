@@ -11,10 +11,12 @@ export default function Home() {
           <h3 className="font-light">An app for your weekly tasks</h3>
         </div>
         <div className="w-full space-y-2">
-          <Link href={"/auth"} className="w-full block">
+          <Link href={"/sign-in"} className="w-full block">
             <Button className={"w-full"} variant="outline">Sign In</Button>
           </Link>
-          <Button className={"w-full"}>Sign Up</Button>
+          <Link href={"/sign-up"} className="w-full block">
+            <Button className={"w-full"}>Sign Up</Button>
+          </Link>
         </div>
       </main>
     </div>

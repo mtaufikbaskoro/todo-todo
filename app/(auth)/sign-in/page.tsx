@@ -21,7 +21,9 @@ const Page = () => {
                                 <ArrowLeft /> Kembali
                             </Button>
                         </Link>
-                        <Button className="flex-1">Sign Up</Button>
+                        <Link href={"/sign-up"} className="flex-1">
+                            <Button className="w-full">Sign Up</Button>
+                        </Link>
                     </div>
                 </div>
             </main>

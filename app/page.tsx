@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -10,7 +11,9 @@ export default function Home() {
           <h3 className="font-light">An app for your weekly tasks</h3>
         </div>
         <div className="w-full space-y-2">
-          <Button className={"w-full"} variant="outline">Sign In</Button>
+          <Link href={"/auth"} className="w-full block">
+            <Button className={"w-full"} variant="outline">Sign In</Button>
+          </Link>
           <Button className={"w-full"}>Sign Up</Button>
         </div>
       </main>
